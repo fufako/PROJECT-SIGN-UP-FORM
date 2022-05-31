@@ -94,7 +94,7 @@ body {
   box-shadow: -10px 0px 19px 27px #cb4c2d;
   background-color: #cb4c2d;
   height: 30%;
-  padding: 25px;
+
   padding-bottom: 40px;
   display: flex;
   flex-flow: row wrap;
@@ -103,7 +103,10 @@ body {
   color: #090502;
   z-index: 2;
 }
-
+.form {
+  display: flex;
+  flex-flow: row wrap;
+}
 .form-header {
   width: 100%;
   color: #090502;
@@ -112,6 +115,11 @@ body {
   display: flex;
   flex-flow: column wrap;
   width: 35%;
+  margin: 10px;
+}
+.error {
+  margin: 10px;
+  width: 100%;
 }
 input {
   width: 200px;
