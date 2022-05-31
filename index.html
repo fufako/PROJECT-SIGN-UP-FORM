@@ -10,6 +10,10 @@
     />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Sign Up</title>
   </head>
   <body>
@@ -25,10 +29,59 @@
         </div>
       </div>
       <div class="flex-right">
-        2
-        <div class="upper"></div>
-        <div class="form"></div>
-        <div class="lower"></div>
+        <div class="upper">
+          <p class="upper-text">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started. <br />
+            You know you want to.
+          </p>
+        </div>
+        <div class="form-container">
+          <h2 class="form-header">Let's do this!</h2>
+          <div class="input">
+            <label for="first_name">FIRST NAME </label>
+            <input type="text" name="first_name" id="first_name" />
+          </div>
+          <div class="input">
+            <label for="last_name">LAST NAME</label>
+            <input type="text" name="last_name" id="last_name" />
+          </div>
+          <div class="input">
+            <label for="mail">EMAIL</label>
+            <input type="mail" name="mail" id="mail" />
+          </div>
+          <div class="input">
+            <label for="phone_number">PHONE NUMBER</label>
+            <input type="number" name="phone_number" id="phone_number" />
+          </div>
+          <div class="input">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="input">
+            <label for="confirm_password">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+            />
+          </div>
+        </div>
+        <div class="lower">
+          <button type="submit">Create account</button>
+          <p class="already">Already have an account? <a href="#">Log in</a></p>
+          <p class="right-footer">
+            fufako
+            <a href="https://github.com/fufako" id="git" target="_blank">
+              <i
+                class="fa fa-github"
+                style="font-size: 24px"
+                href="https://github.com/fufako"
+              ></i
+            ></a>
+          </p>
+        </div>
       </div>
     </div>
   </body>
