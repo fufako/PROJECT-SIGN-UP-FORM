@@ -2,9 +2,13 @@
   font-family: "logoFont";
   src: url("Norse-Bold.otf");
 }
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: "Permanent Marker", cursive;
 }
 .container {
   display: flex;
@@ -37,8 +41,8 @@
 .logo {
   background-color: rgb(0, 0, 0, 0.5);
   font-family: "logoFont";
-  height: 200px;
-  margin-top: 25vh;
+  height: 10%;
+  margin-top: 25%;
   padding: 15px;
   display: flex;
   align-items: center;
@@ -46,15 +50,100 @@
 }
 .logo > h1 {
   text-align: center;
-  font-size: 160px;
+  font-size: 80px;
   color: whitesmoke;
 }
 .logo > img {
-  width: 150px;
-  height: 200px;
+  width: 75px;
+  height: 100px;
 }
 .flex-right {
   min-width: 60%;
   height: 100vh;
-  background-color: #ff6f61;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+.right-footer {
+  text-align: center;
+  padding-top: 30px;
+  color: whitesmoke;
+}
+.right-footer > a:visited {
+  color: whitesmoke;
+}
+.right-footer > a:hover {
+  color: #cb4c2d;
+}
+.upper {
+  font-family: "Permanent Marker", cursive;
+  height: calc(25% + 10% + 15px);
+  background-color: #090502;
+  font-size: 35px;
+  padding: 10% 20% 5% 5%;
+  text-align: justify;
+  box-shadow: -10px 0px 19px 27px rgba(9, 5, 2, 1);
+  color: whitesmoke;
+}
+.lower {
+  background-color: #090502;
+  height: 100%;
+  box-shadow: -10px 0px 19px 27px rgba(9, 5, 2, 1);
+}
+.form-container {
+  box-shadow: -10px 0px 19px 27px #cb4c2d;
+  background-color: #cb4c2d;
+  height: 30%;
+  padding: 25px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  font-family: "Permanent Marker", cursive;
+  color: #090502;
+  z-index: 2;
+}
+
+.form-header {
+  width: 100%;
+  color: #090502;
+}
+.input {
+  display: flex;
+  flex-flow: column wrap;
+  width: 35%;
+}
+input {
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+button {
+  margin: 20px;
+  margin-top: 50px;
+  width: 180px;
+  height: 60px;
+  background-color: #cb4c2d;
+  font-size: 20px;
+  font-family: "Permanent Marker", cursive;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+button:hover {
+  box-shadow: 0px 0px 9px 2px #cb4c2d;
+}
+.already {
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+  padding-left: 20px;
+  color: whitesmoke;
+}
+.already > a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.already > a:hover {
+  color: #ff6f61;
 }
