@@ -2,7 +2,7 @@ const inputs = document.querySelectorAll("input")
 for (input of inputs) {
   input.addEventListener("focusout", checkIfValid)
 }
-
+const body = document.body
 function checkIfValid(e) {
   if (
     (e.target.value === "" || e.target.value == null) &&
