@@ -27,6 +27,7 @@ label {
   background-image: url("img/bg.jpg");
   background-size: cover;
   justify-content: space-between;
+  flex: 1;
 }
 .left-footer {
   text-align: center;
@@ -44,17 +45,19 @@ label {
 .logo {
   background-color: rgb(0, 0, 0, 0.5);
   font-family: "logoFont";
-  height: 10%;
+  height: fit-content;
   margin-top: 25%;
   padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .logo > h1 {
   text-align: center;
-  font-size: 80px;
+  font-size: 45px;
   color: whitesmoke;
+  width: 170px;
 }
 .logo > img {
   width: 75px;
@@ -66,6 +69,7 @@ label {
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 .right-footer {
   text-align: center;
@@ -80,13 +84,14 @@ label {
 }
 .upper {
   font-family: "Permanent Marker", cursive;
-  height: calc(25% + 10% + 15px);
+  height: fit-content;
   background-color: #090502;
-  font-size: 35px;
-  padding: 10% 20% 5% 5%;
+  font-size: 2vw;
+  padding: 5% 20% 10% 5%;
   text-align: justify;
   box-shadow: -10px 0px 19px 27px rgba(9, 5, 2, 1);
   color: whitesmoke;
+  max-height: 300px;
 }
 .lower {
   background-color: #090502;
@@ -96,9 +101,7 @@ label {
 .form-container {
   box-shadow: -10px 0px 19px 27px #cb4c2d;
   background-color: #cb4c2d;
-  height: 30%;
-
-  padding-bottom: 40px;
+  height: fit-content;
   display: flex;
   flex-flow: row wrap;
   gap: 20px;
