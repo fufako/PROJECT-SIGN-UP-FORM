@@ -28,6 +28,7 @@ label {
   background-size: cover;
   justify-content: space-between;
   flex: 1;
+  align-items: stretch;
 }
 .left-footer {
   text-align: center;
