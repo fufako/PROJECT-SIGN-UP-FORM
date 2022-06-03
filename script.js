@@ -2,7 +2,7 @@ const inputs = document.querySelectorAll("input")
 for (input of inputs) {
   input.addEventListener("focusout", checkIfValid)
 }
-const body = document.body
+const password = document.getElementById("password")
 function checkIfValid(e) {
   if (
     (e.target.value === "" || e.target.value == null) &&
@@ -28,6 +28,13 @@ function checkIfValid(e) {
       e.target.nextElementSibling.textContent =
         e.target.previousElementSibling.textContent +
         " format is invalid example: 123 456 789"
+    }
+  } else if (e.target.id === "confirm_password") {
+    if (e.target.value === password.value) {
+      e.target.nextElementSibling.textContent =
+        e.target.previousElementSibling.textContent + " looks good 😁"
+    } else {
+      e.target.nextElementSibling.textContent = "Passwords do not match "
     }
   }
 }
